@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Cases" verbose="1">
+    <listeners>
+        <listener class-name="ListnerClass.Listener"/>
+    </listeners>
+
+    <test name="Verify that user is able to search customers">
+        <parameter name="testRunId1" value="TC-1"/>
+        <classes>
+            <class name="PagesTest.ScreenShot"/>
+        </classes>
+    </test>
+
+    <test name="Test 2">
+        <parameter name="testRunId2" value="TC-2"/>
+        <classes>
+            <class name="PagesTest.ScreenShot2"/>
+        </classes>
+    </test>
+
+    <test name="Test 3">
+        <parameter name="testRunId3" value="TC-3"/>
+        <classes>
+            <class name="PagesTest.ScreenShot3"/>
+        </classes>
+    </test>
+
+</suite>
